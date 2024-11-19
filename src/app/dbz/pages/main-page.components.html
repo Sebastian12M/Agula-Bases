@@ -1,0 +1,13 @@
+<h1> DBZ Personjes</h1>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+    <app-dbz-list [listaPersonajes]="getPersonajes()" (indexCharacter)="eliminarPersonajeById($event)"></app-dbz-list>
+  </div>
+  <div class="col">
+    <app-add-personaje (onNewCharacter)="agregarPersonaje($event)" ></app-add-personaje>
+  </div>
+
+</div>
